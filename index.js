@@ -16,6 +16,7 @@ mongoose.connect('mongodb://localhost/crmDB', {
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Different routes
 routes(app);
 
 app.get('/', (req, res) => {
